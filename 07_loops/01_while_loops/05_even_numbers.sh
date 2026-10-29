@@ -1,0 +1,12 @@
+#!/bin/bash
+
+read -rp "Enter the Number: " num
+i=1
+
+while [ "$i" -le "$num" ]; do
+    if [ $((i % 2 )) -eq 0 ]; then
+        echo "$i"
+    fi
+    i=$((i+1))
+done
+
